@@ -21,17 +21,121 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Map -->
     <section id="home" class="hero">
+        <div class="map-container">
+            <svg class="philippines-map" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <!-- Gradient definition -->
+                <defs>
+                    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1e88e5;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:0.5" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Ocean background -->
+                <rect width="500" height="700" fill="url(#oceanGradient)" />
+
+                <!-- Philippines Islands (simplified) -->
+                <!-- Luzon -->
+                <path d="M200 80 L230 95 L245 130 L235 180 L210 195 L185 185 L175 150 L180 100 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+                
+                <!-- Palawan -->
+                <path d="M140 120 L160 130 L165 180 L155 190 L135 180 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+                
+                <!-- Visayas (Panay/Boracay) -->
+                <path d="M200 220 L230 230 L240 280 L215 295 L190 280 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+                
+                <!-- Negros -->
+                <path d="M235 260 L255 270 L260 320 L240 330 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+                
+                <!-- Cebu -->
+                <path d="M270 280 L290 285 L295 340 L275 345 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+                
+                <!-- Mindanao -->
+                <path d="M180 380 L220 390 L240 460 L200 490 L160 460 Z" class="island" fill="#2e7d32" stroke="#1b5e20" stroke-width="2" />
+
+                <!-- Tourist Destination Pins -->
+                
+                <!-- Boracay -->
+                <g class=\"pin-group\" onclick=\"showPopup('Boracay Island', '🏝️ World-renowned white sand beaches and crystal-clear waters. Best for swimming and water sports.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"215\" cy=\"225\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"215\" cy=\"225\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"215\" y=\"265\" class=\"pin-label\" text-anchor=\"middle\">🏝️ Boracay</text>
+                </g>
+
+                <!-- Chocolate Hills -->
+                <g class=\"pin-group\" onclick=\"showPopup('Chocolate Hills', '🏔️ Thousands of brown limestone hills creating a stunning landscape. UNESCO heritage site.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"265\" cy=\"295\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"265\" cy=\"295\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"265\" y=\"335\" class=\"pin-label\" text-anchor=\"middle\">🏔️ Chocolate Hills</text>
+                </g>
+
+                <!-- Palawan Lagoon -->
+                <g class=\"pin-group\" onclick=\"showPopup('Palawan Lagoon', '💧 Crystal-clear lagoons surrounded by limestone cliffs. Perfect for island hopping and snorkeling.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"150\" cy=\"155\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"150\" cy=\"155\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"150\" y=\"195\" class=\"pin-label\" text-anchor=\"middle\">💧 Palawan</text>
+                </g>
+
+                <!-- Manila/Intramuros -->
+                <g class=\"pin-group\" onclick=\"showPopup('Intramuros', '🏯 Historic walled city in Manila. Spanish colonial architecture and cultural heritage.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"210\" cy=\"120\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"210\" cy=\"120\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"210\" y=\"75\" class=\"pin-label\" text-anchor=\"middle\">🏛️ Manila</text>
+                </g>
+
+                <!-- Banaue Rice Terraces -->
+                <g class=\"pin-group\" onclick=\"showPopup('Banaue Rice Terraces', '🌾 Ancient terraces carved into mountains. UNESCO World Heritage Site with indigenous culture.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"190\" cy=\"100\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"190\" cy=\"100\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"190\" y=\"55\" class=\"pin-label\" text-anchor=\"middle\">🌾 Rice Terraces</text>
+                </g>
+
+                <!-- Taal Volcano -->
+                <g class=\"pin-group\" onclick=\"showPopup('Taal Volcano', '🌋 Active volcano with crater lake. Spectacular views and trekking opportunities.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"215\" cy=\"165\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"215\" cy=\"165\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"215\" y=\"205\" class=\"pin-label\" text-anchor=\"middle\">🌋 Taal</text>
+                </g>
+
+                <!-- Coron Island -->
+                <g class=\"pin-group\" onclick=\"showPopup('Coron Island', '🤿 World-class diving spots with shipwrecks and marine life. Island hopping destination.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"145\" cy=\"145\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"145\" cy=\"145\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"145\" y=\"185\" class=\"pin-label\" text-anchor=\"middle\">🤿 Coron</text>
+                </g>
+
+                <!-- Davao/Mindanao -->
+                <g class=\"pin-group\" onclick=\"showPopup('Mindanao', '🏖️ Untouched beaches, nature reserves, and indigenous cultures. Tropical paradise exploration.')\" style=\"cursor: pointer;\">
+                    <circle cx=\"210\" cy=\"430\" r=\"14\" class=\"pin-circle\" />
+                    <circle cx=\"210\" cy=\"430\" r=\"9\" class=\"pin-dot\" />
+                    <text x=\"210\" y=\"470\" class=\"pin-label\" text-anchor=\"middle\">🏖️ Mindanao</text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hero-overlay\"></div>
         <div class="hero-content">
             <h1>It's More Fun in the Philippines</h1>
-            <p>Discover tropical paradise, vibrant culture, and unforgettable adventures</p>
+            <p>Click pins on the map to explore top destinations • Discover tropical paradise</p>
             <button class="cta-btn" onclick="document.getElementById('attractions').scrollIntoView({behavior: 'smooth'})">Explore Now</button>
         </div>
+
+        <!-- Popup for pin information -->
+        <div class="pin-popup" id="pinPopup">
+            <div class="popup-content">
+                <span class="popup-close" onclick="closePopup()">&times;</span>
+                <h3 id="popupTitle\"></h3>
+                <p id="popupDesc\"></p>
+                <button class="popup-btn" onclick="document.getElementById('attractions').scrollIntoView({behavior: 'smooth'}); closePopup();\">Learn More</button>
+            </div>
+        </div>
+
         <div class="hero-background">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
+            <div class="wave wave1\"></div>
+            <div class="wave wave2\"></div>
+            <div class="wave wave3\"></div>
         </div>
     </section>
 

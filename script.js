@@ -1,3 +1,23 @@
+// Show popup function for map pins
+function showPopup(title, description) {
+    document.getElementById('popupTitle').textContent = title;
+    document.getElementById('popupDesc').textContent = description;
+    document.getElementById('pinPopup').style.display = 'block';
+}
+
+// Close popup function
+function closePopup() {
+    document.getElementById('pinPopup').style.display = 'none';
+}
+
+// Close popup when clicking outside
+window.addEventListener('click', function(event) {
+    const popup = document.getElementById('pinPopup');
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -13,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Contact form submission
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const name = this.querySelector('input[type="text"]').value;
     const email = this.querySelector('input[type="email"]').value;
@@ -59,7 +79,8 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Mobile menu toggle (if needed in future)
+// Initialize map
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Website loaded! Welcome to the Philippines 🇵🇭');
+    console.log('Click on the map pins to explore top tourist destinations!');
 });
