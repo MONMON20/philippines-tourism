@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's More Fun in the Philippines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🇵🇭 Philippines</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#islands">Islands</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>It's More Fun in the Philippines</h1>
+            <p>Discover tropical paradise, vibrant culture, and unforgettable adventures</p>
+            <button class="cta-btn" onclick="document.getElementById('attractions').scrollIntoView({behavior: 'smooth'})">Explore Now</button>
+        </div>
+        <div class="hero-background">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="attractions">
+        <h2>Top Attractions</h2>
+        <div class="attractions-grid">
+            <div class="card">
+                <div class="card-icon">🏝️</div>
+                <h3>Boracay Island</h3>
+                <p>World-renowned white sand beaches and crystal-clear waters perfect for swimming and water sports.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏔️</div>
+                <h3>Chocolate Hills</h3>
+                <p>Stunning landscape with thousands of brown hills creating a magical chocolate-like vista.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <h3>Palawan Lagoon</h3>
+                <p>Crystal-clear lagoons surrounded by towering limestone cliffs and lush tropical forests.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏯</div>
+                <h3>Intramuros</h3>
+                <p>Historic walled city in Manila showcasing Spanish colonial architecture and rich heritage.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌴</div>
+                <h3>Rice Terraces</h3>
+                <p>Ancient Ifugao rice terraces carved into the mountains, a UNESCO World Heritage Site.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏞️</div>
+                <h3>Taal Volcano</h3>
+                <p>Iconic active volcano with a crater lake offering spectacular views and trekking opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Islands Section -->
+    <section id="islands" class="islands">
+        <h2>Island Paradise</h2>
+        <div class="islands-container">
+            <div class="island-card luzon">
+                <h3>Luzon</h3>
+                <p>The largest island, home to Manila, mountain ranges, and cultural heritage sites.</p>
+                <ul>
+                    <li>🗻 Mountain climbing</li>
+                    <li>🏛️ Historical sites</li>
+                    <li>🌾 Agricultural tours</li>
+                </ul>
+            </div>
+            <div class="island-card visayas">
+                <h3>Visayas</h3>
+                <p>Central islands famous for beaches, diving, and island-hopping adventures.</p>
+                <ul>
+                    <li>🤿 World-class diving</li>
+                    <li>⛱️ Beach hopping</li>
+                    <li>🐚 Coral gardens</li>
+                </ul>
+            </div>
+            <div class="island-card mindanao">
+                <h3>Mindanao</h3>
+                <p>The second-largest island with pristine beaches, mountains, and indigenous cultures.</p>
+                <ul>
+                    <li>🏖️ Untouched beaches</li>
+                    <li>🌺 Nature reserves</li>
+                    <li>🎭 Indigenous cultures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="culture">
+        <h2>Filipino Culture</h2>
+        <div class="culture-grid">
+            <div class="culture-item">
+                <div class="culture-icon">🎉</div>
+                <h3>Fiestas & Festivals</h3>
+                <p>Colorful celebrations throughout the year with street parties, parades, and traditional performances.</p>
+            </div>
+            <div class="culture-item">
+                <div class="culture-icon">🍜</div>
+                <h3>Delicious Cuisine</h3>
+                <p>Mouth-watering dishes like adobo, lechon, sinigang, and fresh tropical fruits.</p>
+            </div>
+            <div class="culture-item">
+                <div class="culture-icon">🎵</div>
+                <h3>Music & Dance</h3>
+                <p>Vibrant traditions including tinikling, carinosa, and modern Filipino music scene.</p>
+            </div>
+            <div class="culture-item">
+                <div class="culture-icon">👨‍👩‍👧‍👦</div>
+                <h3>Warm Hospitality</h3>
+                <p>Filipinos are known for their genuine warmth, friendliness, and welcoming spirit.</p>
+            </div>
+            <div class="culture-item">
+                <div class="culture-icon">🎨</div>
+                <h3>Arts & Crafts</h3>
+                <p>Beautiful traditional arts including weaving, pottery, and indigenous artwork.</p>
+            </div>
+            <div class="culture-item">
+                <div class="culture-icon">⛪</div>
+                <h3>Spiritual Heritage</h3>
+                <p>Rich religious traditions with stunning churches and centuries-old faith practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Plan Your Visit</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell us about your dream Philippine adventure..." rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📍 Philippines</p>
+                <p>📧 hello@philippines.travel</p>
+                <p>📞 +63 2 1234 5678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 It's More Fun in the Philippines. All rights reserved. 🇵🇭</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
